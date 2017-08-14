@@ -1,8 +1,34 @@
-p{
+main{
+    background: pink;
+    width: 1000px;
+    height: 300px;
+    margin: 0 auto;
+    
+    
+    
+}
+.box-size, .standard{
+    background: beige;
+    height: 250px;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+
+}
+
+.standard p{
     background: red;
-    width: 50%;
+}
+.box-size p{
+    box-sizing: border-box;
+    background: green;   
+}
+.standard p, .box-size p{ 
+    max-width: 45%;
     height: 150px;
+    margin: 0;
     border-radius: 10px;
+    border: 10px solid black;
     text-align: center;
     font-size: 2em;
 }
